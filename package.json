@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "fix": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+    "lint:eslint": "eslint 'pages/**/*.{js,ts,tsx}' --quiet --fix",
+    "lint:prettier": "prettier 'pages/**/*{js,ts,tsx}' --write"
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
