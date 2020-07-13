@@ -4,6 +4,7 @@ import matter from "gray-matter";
 
 //import './style/main.css';
 import Head from "next/head";
+import { Main } from "./components/Main";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
@@ -14,6 +15,7 @@ export default function Home() {
         <title>Nasr Maswood</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Main />
 
       <main>
         <h1 className="title">Nasr Maswood</h1>
