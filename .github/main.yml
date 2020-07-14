@@ -1,0 +1,10 @@
+name: A workflow for deploying code to nasrmaswood.com 
+on: push
+
+jobs:
+  build:
+    name: Deploy code
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ./docker

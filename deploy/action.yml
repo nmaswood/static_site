@@ -1,0 +1,13 @@
+name: "Deploy site"
+description: "Deploy assets to nasrmaswood.com"
+author: "octocat@github.com"
+
+#inputs:
+  #AWS_KEY:
+    #required: true
+  #AWS_SECRET:
+    #required: true
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
