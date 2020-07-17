@@ -22,10 +22,21 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v2-beta
+    - uses: chrislennon/action-aws-cli@v1.1
       with:
         node-version: '12'
-    - working-directory: ./
-    - uses: ./deploy
+      run: |
+        echo "Install yarn"
+        cd "$GITHUB_WORKSPACE"
+        yarn install
+        yarn build
+
+        BUILD_ID=`cat .next/BUILD_ID`
+        INDEX_FILE=".next/server/static/$BUILD_ID/pages/index.html"
+
+        echo "Deploying $BUILD_ID"
+        aws s3 sync .next s3://nasrmaswood.com/next_ --cache-control public --acl public-read
+        aws s3 cp $INDEX_FILE s3://nasrmaswood.com/index.html --cache-control public --acl public-read
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
