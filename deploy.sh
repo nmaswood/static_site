@@ -1,3 +1,6 @@
+yarn install
+yarn build
+
 BUILD_ID=`cat .next/BUILD_ID`
 INDEX_FILE=".next/server/static/$BUILD_ID/pages/index.html"
 

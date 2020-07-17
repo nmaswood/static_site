@@ -2,11 +2,11 @@ name: "Deploy site"
 description: "Deploy assets to nasrmaswood.com"
 author: "octocat@github.com"
 
-#inputs:
-  #AWS_KEY:
-    #required: true
-  #AWS_SECRET:
-    #required: true
+inputs:
+  AWS_ACCESS_KEY_ID:
+    required: true
+  AWS_SECRET_ACCESS_KEY:
+    required: true
 
 runs:
   using: "docker"
