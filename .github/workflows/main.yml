@@ -34,7 +34,7 @@ jobs:
         INDEX_FILE=".next/server/static/$BUILD_ID/pages/index.html"
 
         echo "Deploying $BUILD_ID"
-        aws s3 sync .next "s3://$AWS_BUCKET/_next" --cache-control public --acl public-read
+        aws s3 sync .next "s3://$AWS_BUCKET/_next" --cache-control public --acl public-read > /dev/null
         aws s3 cp $INDEX_FILE "s3://$AWS_BUCKET/index.html" --cache-control public --acl public-read
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
