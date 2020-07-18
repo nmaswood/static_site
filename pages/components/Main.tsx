@@ -1,14 +1,11 @@
 export default function Main() {
   return (
     <div className="Main--container">
-      <header className="Main--title"></header>
-      <div className="Main--about-me">My name is Nasr!</div>
-
-      <label>Some Technical Articles</label>
-      <li className="Main--technical"></li>
-
-      <label>Some Personal Articles</label>
-      <li className="Main--personal"></li>
+      <header className="Main--title">
+        <h1>About me</h1>
+        <div className="Main--about-me">This is a work in progress!</div>
+        <div className="Main--about-email">me@narmaswood.com</div>
+      </header>
 
       <footer></footer>
     </div>

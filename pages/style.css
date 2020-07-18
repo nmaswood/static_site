@@ -4,6 +4,10 @@ html {
 }
 
 body {
-    background: linear-gradient(90deg,#321c64,#20123a);
-    color: #fff;
+    background: #d2dae2;
+    color: black;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+.Main--about-email{ }
