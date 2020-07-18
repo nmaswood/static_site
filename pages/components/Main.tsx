@@ -2,9 +2,11 @@ export default function Main() {
   return (
     <div className="Main--container">
       <header className="Main--title">
-        <h1>About me</h1>
-        <div className="Main--about-me">This is a work in progress!</div>
-        <div className="Main--about-email">me@narmaswood.com</div>
+        <div className="Main--about-me">
+          this site is a work in{" "}
+          <a href="https://github.com/nmaswood/static_site">progress</a>, check
+          back later?
+        </div>
       </header>
 
       <footer></footer>
