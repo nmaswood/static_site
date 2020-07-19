@@ -1,15 +1,17 @@
-export default function Main() {
-  return (
-    <div className="Main--container">
-      <header className="Main--title">
-        <div className="Main--about-me">
-          this site is a work in{" "}
-          <a href="https://github.com/nmaswood/static_site">progress</a>, check
-          back later?
-        </div>
-      </header>
+import React  from 'react';
 
-      <footer></footer>
-    </div>
-  );
+export default function Main() {
+    const [visible, setVisible ] = React.useState(false);
+    return (
+        <div className="Main--container">
+            <header className="Main--title">
+                <div className='Main--intro'>
+                    <h1 className="Main--name">Nasr Maswood</h1>
+                    <h1 className="Main--nav">blog</h1>
+                    <h1 className="Main--nav">about me</h1>
+                </div>
+            </header>
+            <footer></footer>
+        </div>
+    );
 }

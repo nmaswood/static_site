@@ -11,27 +11,36 @@ html {
 }
 
 body {
-    background: linear-gradient(90deg,#321c64,#20123a);
-    color: white;
-    font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 4em;
     height: 100%;
     width: 100%;
 }
 
+
 .Main--container { 
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
+.Main--title{ 
+}
+
+.Main--name{ 
+}
 
 .Main--about-me { 
-    text-align: center;
 }
 
-.Main--about-me > a{ 
+
+.Main--contact::before  {
+    content: 'contact: me@nasrmaswood.com'
+}
+.Main--contact {
     color: white;
+    font-weight: 550;
+    border-radius: 4px;
+
+
+}
+
+.Main--article-container {
 }
