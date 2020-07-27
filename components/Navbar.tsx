@@ -6,18 +6,13 @@ const Navbar: React.FC = () => (
     <div className="Navbar--name">Nasr Maswood</div>
     <ul className="Navbar--nav-items">
       <li className="Navbar--nav-item">
-        <Link href="/">
-          <a>About Me</a>
-        </Link>
-      </li>
-      <li className="Navbar--nav-item">
         <Link href="/technical">
-          <a>Technical</a>
+          <a>Thoughts on Software</a>
         </Link>
       </li>
       <li className="Navbar--nav-item">
         <Link href="/personal">
-          <a>Personal</a>
+          <a>Thoughts on Life</a>
         </Link>
       </li>
     </ul>

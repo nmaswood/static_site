@@ -1,12 +1,12 @@
 .Navbar--container {
   font-size: 30px;
   font-weight: 200;
-  background: #474787;
+  background: #b33939;
   border-bottom: 1px black solid;
   color: white;
   display: grid;
   grid-template-columns: 3fr 5fr;
-  height: 60px;
+  height: 90px;
   padding-left: 10px;
 }
 
