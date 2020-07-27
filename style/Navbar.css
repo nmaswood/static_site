@@ -1,14 +1,30 @@
 .Navbar--container {
-    border-bottom: 1px black solid;
-    display: grid;
-    grid-template-columns: 3fr 5fr;
-    padding: 10px 0;
+  font-size: 30px;
+  font-weight: 200;
+  background: #474787;
+  border-bottom: 1px black solid;
+  color: white;
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  height: 60px;
+  padding-left: 10px;
+}
+
+.Navbar--name {
+  display: flex;
+  align-items: center;
 }
 
 ul.Navbar--nav-items {
-    display: flex;
-    justify-content:  space-evenly;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
